@@ -1,0 +1,19 @@
+while True:
+    start_question = input("would you like to use our calculator? (yes) : (no) ")
+    if start_question == "yes":
+        num1 = int(input("Add a number: "))
+        num2 = int(input("Add a second number: "))
+        arithmetic = input("select an operator: ")
+        if arithmetic == "+":
+            print("your result is: ", num1 + num2)
+        elif arithmetic == "*":
+            print("your result is: ", num1 * num2)
+        elif arithmetic == "-":
+            print("your result is: ", num1 - num2)
+        elif arithmetic == "/":
+            print("your result is: ", num1 / num2)
+        elif arithmetic == "%":
+            print("your result is: ", num1 % num2)
+    elif start_question == "no":
+        print("thanks!!")
+        break
